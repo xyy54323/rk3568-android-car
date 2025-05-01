@@ -1,0 +1,95 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 方向轮盘 -->
+    <com.example.car.JoystickView
+        android:id="@+id/joystick"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="left"
+        app:background_color="#66CCCC"
+        app:handle_color="#FF5722"
+        app:handle_size="24dp"/>
+
+    <!-- 方向显示 -->
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        android:text="○ 停止状态"
+        android:background="@drawable/direction_bg"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+    <!-- 速度显示（调整后的位置） -->
+    <TextView
+        android:id="@+id/SpeedRatio"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:text="当前速度：0%"
+        android:textColor="#DB0909"
+        android:background="@drawable/speed_bg"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/angle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/speed_bg"
+        android:padding="8dp"
+        android:text="角度：0.0°"/>
+
+
+    <EditText
+        android:id="@+id/serverIp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/speed_bg"
+        android:padding="8dp"
+        android:hint="输入服务端IP地址" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="255dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/speed_bg"
+        android:padding="8dp"
+        android:hint="输入端口：8888"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/speed_bg"
+        android:padding="8dp"
+        android:text="连接"/>
+
+</FrameLayout>
