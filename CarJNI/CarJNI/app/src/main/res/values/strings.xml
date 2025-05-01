@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CarJNI</string>
+    <string name="angle_text">角度：%d°</string>
+    <string name="speed_text">当前速度：%d%%</string>
+</resources>

@@ -1,0 +1,8 @@
+<!-- res/drawable/speed_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E3F2FD"/> <!-- 浅青色背景 -->
+    <corners android:radius="8dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="#BBDEFB"/>
+</shape>
